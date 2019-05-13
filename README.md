@@ -30,13 +30,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+--> `.forEach` does not create a new array and the `return` statement cannot be used with it. Does not mutate the array
+
+--> `.map` creates a new array when it is used, therefore if the goal is that a new array be created `.map` is prefered as it works with `return` value to create this array. It mutates the array.
+
+
 2. What is the difference between a function and a method?
+
+--> `function`is a set of statement housed in curly braces that execute a set of instructions. 
+
+--> `Methods` are functions written specifically for  Objects, they are functions stored as part of an object property.
+
 
 3. What is closure?
 
+--> `A closure` is a function that has access to variables outside its scope. it has access to global variables. 
+
 4. Describe the four rules of the 'this' keyword.
 
+--> `this` in a global scope will point to the window object.
+
+--> When an object called in other to access its properties or methods, the `objectname dot property` changes to `this dot object property`. `this` replaces the object name.
+
+--> A constructor function is used to create an object. when the new keyword is used before the constructor function, an instance of the object is being created.
+
+
+--> `.call .apply` is used when we want to explicitly bind `this` to an object so instead of the value of `this` refering to a window object, the value becomes the object it is being binded with.
+
 5. Why do we need super() in an extended class?
+
+--> `super()` is used by sub classes to inherit parent properties and methods.
 
 ## Project Set up
 
